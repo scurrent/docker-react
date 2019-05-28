@@ -4,3 +4,11 @@ docker ps                           to list images
 
 
 docker build -t scurrent/docker-react -f Dockerfile.dev .
+
+
+
+
+
+git add .
+git commit -m "comment"
+git push origin master

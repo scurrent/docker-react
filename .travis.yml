@@ -5,5 +5,8 @@ services:
 before_install:
   - docker build -t scurrent/docker-react -f Dockerfile.dev .    # gives you back the id of the image, so tag it
 
+#script:
+#  - docker run scurrent/docker-react npm run test -- --coverage    #default npm run test hangs and gives you some options
+
 script:
-  - docker run scurrent/docker-react npm run test -- --coverage    #default npm run test hangs and gives you some options
+    - docker run -e CI=true scurrent/docker-react npm run test -- --watchAll=false
