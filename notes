@@ -1,0 +1,6 @@
+docker build .
+docker run <image name>
+docker ps                           to list images
+
+
+docker build -t scurrent/docker-react -f Dockerfile.dev .
