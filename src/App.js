@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          RE RO RU REACT!!!
+          Hello from the Currents!
         </a>
       </header>
     </div>
